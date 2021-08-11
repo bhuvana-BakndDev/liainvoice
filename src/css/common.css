@@ -327,3 +327,24 @@ a.article:hover {
   font-family: "poppins";
   font-weight: 990 !important;
 }
+.semicircle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 70px;
+  border-radius: 0 0 150px 150px ;
+  background-color: black;
+}
+.cardboxblue {
+  background: transparent linear-gradient(180deg, #388EE9 0%, #37FEEF 100%) 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  padding: 5px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  border-radius: 15px !important;
+}
+a.text-left {
+  color: white;
+}

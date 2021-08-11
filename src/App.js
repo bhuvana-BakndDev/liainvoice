@@ -13,6 +13,9 @@ import Login  from "../src/Commponets/login";
   import Loop  from "../src/Commponets/common/loop";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import ColumnChart  from "../src/Commponets/chart";
+import DoughnutChart  from "../src/Commponets/common/donutchart";
+
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route exact path="/reset" component = {Reset} />
         <Route exact path="/dashboard" component = {DashBoard} />
         <Route exact path="/loop" component = {Loop} />
+
+        <Route exact path="/chart" component = {ColumnChart} />
+        <Route exact path="/donut" component = {DoughnutChart} />
       </Switch>
     </div>
   );
