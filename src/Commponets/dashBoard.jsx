@@ -7,8 +7,19 @@ import client from '../assets/images/Totclients.png';
 import {Card, nav} from "react-bootstrap";
 // import { CardsComp } from "./common/card";
 import {Col, Row, Container} from 'react-bootstrap';
+//for column chart
 import ColumnChart from './chart';
+//for donut chart
 import DoughnutChart from './common/donutchart';
+//for datepicker
+//npm install --save bootstrap-daterangepicker react jquery moment
+//npm install --save react-bootstrap-daterangepicker
+import DateRangePicker from 'react-bootstrap-daterangepicker';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-daterangepicker/daterangepicker.css';
+
+
+
 
 
 export default class DashBoard extends Component {
@@ -45,9 +56,15 @@ export default class DashBoard extends Component {
       <a className="text-left"> Querterly </a> &nbsp;
       <a className="text-left"> Yearly </a> 
         </div>
-        <div className="col-md-9">
+        <div className="col-md-6">
         </div>
-      
+        <div className="col-md-3">
+        <DateRangePicker>
+  <button type="button" className="btn btn-primary">
+    click to open
+  </button>
+</DateRangePicker>
+      </div>
         </div>    
         <br></br>             
 <div className="row">

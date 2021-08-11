@@ -16,9 +16,7 @@ class DoughnutChart extends Component {
 			// 	fontSize: 24,
 			// 	dockInsidePlotArea: true
 			// }],
-			legend:{
-				fontSize: 30,
-			   },
+		
 			data: [{
               
 				type: "doughnut",
@@ -41,7 +39,7 @@ class DoughnutChart extends Component {
 		<div>
 
 			<CanvasJSChart options = {options} 
-				/* onRef={ref => this.chart = ref} */
+			
 			/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
