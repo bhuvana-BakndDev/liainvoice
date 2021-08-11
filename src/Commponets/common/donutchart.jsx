@@ -16,6 +16,9 @@ class DoughnutChart extends Component {
 			// 	fontSize: 24,
 			// 	dockInsidePlotArea: true
 			// }],
+			legend:{
+				fontSize: 30,
+			   },
 			data: [{
               
 				type: "doughnut",
