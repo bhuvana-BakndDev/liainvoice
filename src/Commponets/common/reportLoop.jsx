@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Report} from '../common/report';
+import {Report} from './report';
 import {Col, Row, Container} from 'react-bootstrap';
 
 
@@ -36,7 +36,7 @@ const dataList = [
         description: 'somthing'
     },
 ]
-export class ReportLoop extends Component{
+export default class ReportLoop extends Component{
 
     state = {
         count: 0

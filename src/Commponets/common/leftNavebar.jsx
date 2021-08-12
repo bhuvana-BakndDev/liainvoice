@@ -33,7 +33,7 @@ export default class LeftNavBar extends Component {
           
             </li> 
 
-                {/* <li className="active">
+                <li className="active">
                     <a href="/dashboard" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
                     <ul className="collapse list-unstyled" id="homeSubmenu">
                         <li>
@@ -62,8 +62,8 @@ export default class LeftNavBar extends Component {
                             <a href="#">Page 3</a>
                         </li>
                     </ul>
-                </li> */}
-                <li>
+                </li>
+                {/* <li>
                 <NavDropdownMenu title="Customer" id="collasible-nav-dropdown">
                 <DropdownSubmenu href="#action/3.7" title="Add Customer">
                 <NavDropdown.Item href="#action/8.1">Sub 1</NavDropdown.Item>
@@ -74,7 +74,7 @@ export default class LeftNavBar extends Component {
 
                 </NavDropdownMenu>
 
-                </li>
+                </li> */}
                 <li>
                     <a href="#" align = "left">invoices</a>
                 </li> <li>

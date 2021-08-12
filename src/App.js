@@ -11,6 +11,8 @@ import Login  from "../src/Commponets/login";
  import Reset  from "../src/Commponets/reset";
  import DashBoard  from "../src/Commponets/dashBoard";
   import Loop  from "../src/Commponets/common/loop";
+  import ReportLoop  from "../src/Commponets/common/reportLoop";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import ColumnChart  from "../src/Commponets/common/chart";
@@ -29,6 +31,8 @@ function App() {
         <Route exact path="/reset" component = {Reset} />
         <Route exact path="/dashboard" component = {DashBoard} />
         <Route exact path="/loop" component = {Loop} />
+        <Route exact path="/report" component = {ReportLoop} />
+
 
         <Route exact path="/chart" component = {ColumnChart} />
         <Route exact path="/donut" component = {DoughnutChart} />
