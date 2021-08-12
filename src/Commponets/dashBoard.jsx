@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import LeftNavBar from './common/leftNavebar';
+// import sidebar from './sidebar';
+
 import est from '../assets/images/EstIcon.png';
 import inv from '../assets/images/invoice.png';
 import proj from '../assets/images/Totproj.png';
@@ -8,7 +10,7 @@ import {Card, nav} from "react-bootstrap";
 // import { CardsComp } from "./common/card";
 import {Col, Row, Container} from 'react-bootstrap';
 //for column chart
-import ColumnChart from './chart';
+import ColumnChart from './common/chart';
 //for donut chart
 import DoughnutChart from './common/donutchart';
 //for datepicker
@@ -18,7 +20,9 @@ import DateRangePicker from 'react-bootstrap-daterangepicker';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-daterangepicker/daterangepicker.css';
 
-
+//progress bar
+import { ProgressBar, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -28,8 +32,11 @@ export default class DashBoard extends Component {
             email: '',
             password: ''
         }
+
+     
   
     render() {
+      const percentage = 73;
         return (
             <div>
                
@@ -44,6 +51,7 @@ export default class DashBoard extends Component {
                     <Row>
                     <Col sm={12} sm={3}>
                         <LeftNavBar/>
+                        {/* <sidebar/> */}
                     </Col>
                     <Col sm={12} sm={9} >
                     <Row>
@@ -82,6 +90,26 @@ export default class DashBoard extends Component {
                       <Card.Subtitle className=" text-centre ">200000
                       </Card.Subtitle>
                    </Card.Body>
+                   <br></br>
+                   <div className="row">
+                   <div className="col-md-3"></div>
+                   <div className="col-md-6 rectangle" > 
+                   
+                        {/* <div className="progressBar ">
+                           <ProgressBar now={percentage} variant="success"/>
+                         </div> */}
+                         <div class="progress" style={{height: "5px"}}>
+                            <div class="progress-bar bg-success" role="progressbar" style={{width: "15%"}}  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      
+                  </div>
+                   <div className="col-md-3"></div>
+                    
+                   
+                  </div>
+                 
+
+
                 </Card>
         </div>
     </div>
@@ -98,6 +126,23 @@ export default class DashBoard extends Component {
                       <Card.Subtitle className=" text-centre ">200000
                       </Card.Subtitle>
                    </Card.Body>
+                   <br></br>
+                   <div className="row">
+                   <div className="col-md-3"></div>
+                   <div className="col-md-6 rectangle" > 
+                   
+                        {/* <div className="progressBar" style={{height: "0.1px"}}>
+                           <ProgressBar now={percentage} style={{width: "95%"}} variant="success"/>
+                         </div> */}
+                         <div class="progress" style={{height: "5px"}}>
+                            <div class="progress-bar bg-success" role="progressbar" style={{width: "55%"}}  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      
+                  </div>
+                   <div className="col-md-3"></div>
+                    
+                   
+                  </div>
                 </Card>
         </div>
     </div>

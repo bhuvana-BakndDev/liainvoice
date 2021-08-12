@@ -13,7 +13,7 @@ import Login  from "../src/Commponets/login";
   import Loop  from "../src/Commponets/common/loop";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ColumnChart  from "../src/Commponets/chart";
+import ColumnChart  from "../src/Commponets/common/chart";
 import DoughnutChart  from "../src/Commponets/common/donutchart";
 
 
